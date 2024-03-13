@@ -93,6 +93,7 @@ public class ThreadApp extends JDialog {
         jPanel.add(startButton, gridBagConstraint);
         startButton.setPreferredSize(new Dimension(100, 20));
         gridBagConstraint.gridx++;
+        endButton.setEnabled(false);
         startButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -100,6 +101,8 @@ public class ThreadApp extends JDialog {
                 thread2Time = new Thread(thread2);
                 thread1Time.start();
                 thread2Time.start();
+                startButton.setEnabled(false);
+                endButton.setEnabled(true);
 
             }
         });
@@ -108,6 +111,10 @@ public class ThreadApp extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 thread1Time.stop();
+                thread2Time.stop();
+                startButton.setEnabled(true);
+                endButton.setEnabled(false);
+
             }
         });
 

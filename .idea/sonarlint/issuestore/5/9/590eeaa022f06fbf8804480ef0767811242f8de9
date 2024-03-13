@@ -6,9 +6,9 @@ java:S1604"(Make this anonymous inner class a lambda(è³ìı8‘èºÏã1
 J
 java:S1604("(Make this anonymous inner class a lambda(±İÇ‡ùÿÿÿÿ8‘èºÏã1
 D
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™èºÏã1
-D
 java:S2189+""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™èºÏã1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™èºÏã1
 E
 java:S1948"(Make "thread" transient or serializable.(è³ìı8œèºÏã1
 K
@@ -24,6 +24,8 @@ java:S3986"FMake sure that week Year "YYY" is expected here instead of Year "y
 {
 java:S2142/"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8 èºÏã1
 N
-java:S1874n",Remove this use of "stop"; it is deprecated.(Ÿ•èòøÿÿÿÿ8¤èºÏã1
+java:S1874q",Remove this use of "stop"; it is deprecated.(Ÿ•èòøÿÿÿÿ8¤èºÏã1
+I
+java:S1874r",Remove this use of "stop"; it is deprecated.(ÇÅ‘Ğ8ğßÇÏã1
 V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¤èºÏã1
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¨ÁÂÏã1
