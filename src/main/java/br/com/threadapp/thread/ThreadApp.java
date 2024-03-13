@@ -2,6 +2,11 @@ package br.com.threadapp.thread;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 
 public class ThreadApp extends JDialog {
 
@@ -14,6 +19,40 @@ public class ThreadApp extends JDialog {
     private JButton  startButton = new JButton("Start");
     private JButton  endButton = new JButton("Stop ");
 
+
+    private Runnable thread =  new Runnable(){
+
+        @Override
+        public void run() {
+            while(true){
+
+                try {
+                    textField1.setText(new SimpleDateFormat("dd/MM/YYY hh:MM:ss").format(Calendar.getInstance().getTime()));
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    };
+
+
+    private Runnable thread2 = new Runnable() {
+        @Override
+        public void run() {
+            while(true){
+                textField2.setText(new SimpleDateFormat("dd/MM/yyyy hh:MM:ss").format(new Date()));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    };
+    private Thread thread1Time;
+
+    private Thread thread2Time;
     public ThreadApp(){
         setTitle("Thread Application");
         setSize(new Dimension(300, 500));
@@ -54,7 +93,23 @@ public class ThreadApp extends JDialog {
         jPanel.add(startButton, gridBagConstraint);
         startButton.setPreferredSize(new Dimension(100, 20));
         gridBagConstraint.gridx++;
+        startButton.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                thread1Time = new Thread(thread);
+                thread2Time = new Thread(thread2);
+                thread1Time.start();
+                thread2Time.start();
 
+            }
+        });
+
+        endButton.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                thread1Time.stop();
+            }
+        });
 
         jPanel.add(endButton, gridBagConstraint);
 

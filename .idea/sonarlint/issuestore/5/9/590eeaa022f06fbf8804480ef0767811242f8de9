@@ -1,0 +1,29 @@
+
+g	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8èºÏã1
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8èºÏã1
+E
+java:S1604"(Make this anonymous inner class a lambda(è³ìı8‘èºÏã1
+J
+java:S1604("(Make this anonymous inner class a lambda(±İÇ‡ùÿÿÿÿ8‘èºÏã1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™èºÏã1
+D
+java:S2189+""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™èºÏã1
+E
+java:S1948"(Make "thread" transient or serializable.(è³ìı8œèºÏã1
+K
+java:S1948(")Make "thread2" transient or serializable.(±İÇ‡ùÿÿÿÿ8œèºÏã1
+J
+java:S19485"-Make "thread1Time" transient or serializable.(¤†å8œèºÏã1
+J
+java:S19487"-Make "thread2Time" transient or serializable.(Õ¤¼¨8œèºÏã1
+{
+java:S2142 "^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8èºÏã1
+h
+java:S3986"FMake sure that week Year "YYY" is expected here instead of Year "yyy".(¦º›ßüÿÿÿÿ8ŸèºÏã1
+{
+java:S2142/"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8 èºÏã1
+N
+java:S1874n",Remove this use of "stop"; it is deprecated.(Ÿ•èòøÿÿÿÿ8¤èºÏã1
+V
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¤èºÏã1
